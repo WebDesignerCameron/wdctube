@@ -1,0 +1,46 @@
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: {}
+
+jobs:
+  update-changelog:
+    if: github.actor != 'github-actions[bot]'    # avoid running when the workflow's own push re-triggers
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install conventional-changelog CLI
+        run: npm install --no-save conventional-changelog-cli@3
+
+      - name: Generate / update CHANGELOG.md
+        # -p angular is the commonly used preset; change to 'conventionalcommits' or other preset if you prefer
+        run: |
+          # Create file if it doesn't exist to ensure the CLI can write into it
+          if [ ! -f CHANGELOG.md ]; then echo "# Changelog" > CHANGELOG.md; fi
+          npx conventional-changelog -p angular -i CHANGELOG.md -s
+
+      - name: Commit and push changelog (if changed)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add CHANGELOG.md
+          # Only commit if there are changes
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(changelog): update CHANGELOG.md [skip ci]"
+            git push origin HEAD:${{ github.ref_name }}
+          else
+            echo "No changelog changes to commit."
+          fi
