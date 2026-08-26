@@ -12,13 +12,13 @@
     and video editing skills,
     also to post videos.
 </section>
-
+<br>
 Current vids: 'This programming language has a swear word in its name...' by WDC
-
+<br>
 Current creators: WDC
-
+<br>
 Current status: WDCTube is not created yet.
-
+<br>
 <section id="contribute" style="text-align:center; box-shadow: 2px 2px 8px grey;">
     <h2>Get a WDCTube Channel</h2>
     Email me at webdesignercameron@gmail.com and attach some
@@ -26,4 +26,5 @@ Current status: WDCTube is not created yet.
     names, video descriptions etc.
     But not yet. When I finish WDCTube.
 </section>
+<br>
 <p>Made by WDC</p>
