@@ -1,1 +1,5 @@
-
+.github/*.yml linguist-vendored=false
+*.yml linguist-detectable=true
+*.md linguist-detectable=true
+*.yml linguist-language=YAML
+*.md linguist-language=Markdown
