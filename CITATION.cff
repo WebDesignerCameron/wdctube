@@ -1,0 +1,18 @@
+message: "Cite as such."
+contributors:
+    channels:
+        channel1: "WDC"
+    coders:
+        bots: "GitHub Actions bot"
+        people:
+            WebDesignerCameron:
+                github: "@WebDesignerCameron"
+                codepen: "@WebDesignerCameron"
+                leetcode: "@WebDesignerCameron"
+                coddy: "@WebDesignerCameron"
+                name: "Cameron"
+                email: "webdesignercameron@gmail.com"
+name: "WDCTube"
+url: "https://webdesignercameron.github.io/wdctube"
+version: "Pre-release"
+type: "Web App"
