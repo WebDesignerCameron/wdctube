@@ -28,4 +28,4 @@ Current status: WDCTube is not created yet.
 </section>
 <br>
 <br>
-<h2>Createe by WebDesignerCameron</h2>
+<h2>Created by WebDesignerCameron</h2>
