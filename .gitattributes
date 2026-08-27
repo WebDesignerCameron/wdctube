@@ -5,3 +5,5 @@
 *.md linguist-detectable=true
 *.yml linguist-language=YAML
 *.md linguist-language=Markdown
+*.json linguist-detectable=true
+*.json linguist-language=JSON
