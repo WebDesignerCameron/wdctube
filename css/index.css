@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Verdana", "Geneva", "Consolas", sans-serif;
+    width: 100%;
+    background-color: white;
+    color: black;
+}
+header {
+    font-size: 1.2rem;
+    font-weight: 450;
+    padding: 5px;
+    border-bottom: 2px solid grey;
+    display: flex;
+    gap: 5px;
+    position: fixed;
+}
+header img {
+    max-width: 10%;
+    min-width: 7%;
+}
+header nav {
+    max-width: 85%;
+    min-width: 80%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+header a {
+    text-decoration: none;
+    color: #333333;
+    display: inline-block;
+    margin-left: 5px;
+}
+main {
+    padding-top: 10vh;
+}
