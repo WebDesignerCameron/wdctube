@@ -3,6 +3,9 @@ const CACHE_NAME = "wdctube";
 const FILES_TO_CACHE = [
   "/",
   "/README.md",
+  "/index.html",
+  "/css/index.css",
+  "/scripts/js/index/index.js",
   "/manifest.json",
   "/assets/icon-192.png",
   "/assets/icon-512.png"
