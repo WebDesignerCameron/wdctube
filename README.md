@@ -28,7 +28,7 @@ Current status: WDCTube is not created yet.
 </section>
 <br>
 <h2>Made With</h2>
-<img src="https://img.shields.io/badge/data-json-FFFF00?style=for-the-badge&logo=json&logoColor=white" /><img src="https://img.shields.io/badge/html-FF6B6B?style=for-the-badge" /><img src="https://img.shields.io/badge/yaml-FF0000?style=for-the-badge&logo=yaml=logoColor=white" /><img src="https://img.shields.io/badge/css-6666FF?style=for-the-badge" /><img src="https://img.shields.io/badge/js-FFFF00?style=for-the-badge&logo=javascript&logoColor=black" /><img src="https://img.shields.io/badge/github-000000?style=for-the-badge&logo=github&logoColor=white" /><img src="https://img.shields.io/badge/github_actions-4444FF?style=for-the-badge&logo=github-actions&logoColor=white" />
+<img src="https://img.shields.io/badge/data-json-FFFF00?style=for-the-badge&logo=json&logoColor=white" /><img src="https://img.shields.io/badge/html-FF6B6B?style=for-the-badge" /><img src="https://img.shields.io/badge/yaml-FF0000?style=for-the-badge&logo=yaml=logoColor=white" /><img src="https://img.shields.io/badge/css-6666FF?style=for-the-badge" /><img src="https://img.shields.io/badge/js-FFFF00?style=for-the-badge&logo=javascript&logoColor=black" /><img src="https://img.shields.io/badge/github-000000?style=for-the-badge&logo=github&logoColor=white" /><img src="https://img.shields.io/badge/github_actions-4444FF?style=for-the-badge&logo=github-actions&logoColor=white" /><img src="https://img.shields.io/badge/markdown-0000DD?style=for-the-badge&logo=markdown&logoColor=white" /><img src="https://img.shields.io/badge/cff-0000FF?style=for-the-badge" />
 <br>
 <br>
 <h2>Created by WebDesignerCameron</h2>
