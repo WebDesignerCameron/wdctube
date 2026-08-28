@@ -2,6 +2,7 @@
 .github/workflows/** linguist-vendored=false
 *.yml linguist-detectable=true
 *.yml linguist-language=YAML
+*.md linguist-documentation=false
 *.md linguist-language=Markdown
 *.json linguist-detectable=true
 *.json linguist-language=JSON
