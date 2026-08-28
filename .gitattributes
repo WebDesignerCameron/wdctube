@@ -1,6 +1,5 @@
 .github/** linguist-vendored=false
 .github/workflows/** linguist-vendored=false
-*.md linguist-vendored=false
 *.yml linguist-detectable=true
 *.md linguist-detectable=true
 *.yml linguist-language=YAML
