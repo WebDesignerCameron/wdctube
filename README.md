@@ -2,10 +2,11 @@
 
 <p style="text-align:center; font-size: 1.2rem;">WDCTube - videos and shorts.</p>
 <p>I couldn't be bothered to make a YouTube channel so I made this.</p>
+<h2>Links</h2>
 <nav class="mainnav">
     &bull; <a href="#intro">Introduction</a><br>
-    &bull; <a href="#contribute">Get your own WDCTube Channel</a>
-    &bull; <a href="./html/comment.html">Source code</a>
+    &bull; <a href="#contribute">Get your own WDCTube Channel</a><br>
+    &bull; <a href="./html/comment.html">Source code</a><br>
 </nav>
 <section id="intro" style="text-align:center; box-shadow: 2px 2px 8px grey;">
     <h2>Introduction</h2>
