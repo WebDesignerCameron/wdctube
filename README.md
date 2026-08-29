@@ -28,6 +28,8 @@ Current status: WDCTube is not created yet.
 <!-- PR_CLOSED_COUNT_START -->0<!-- PR_CLOSED_COUNT_END -->
 <br>
 <!-- PR_MERGED_COUNT_START -->0<!-- PR_MERGED_COUNT_END -->
+<br>
+<!-- PR_CREATED_COUNT_START -->0<!-- PR_CREATED_COUNT_END -->
 <section id="contribute" style="text-align:center; box-shadow: 2px 2px 8px grey;">
     <h2>Get a WDCTube Channel</h2>
     Email me at webdesignercameron@gmail.com and attach some
