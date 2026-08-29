@@ -22,7 +22,7 @@ Current creators: WDC
 <br>
 Current status: WDCTube is not created yet.
 <br>
-Commits: <!-- COMMIT-COUNT-START -->0<!-- COMMIT-COUNT-END -->(may not be totally accurate)
+Commits: <!-- COMMIT_COUNT_START -->0<!-- COMMIT_COUNT_END -->(may not be totally accurate)
 <section id="contribute" style="text-align:center; box-shadow: 2px 2px 8px grey;">
     <h2>Get a WDCTube Channel</h2>
     Email me at webdesignercameron@gmail.com and attach some
