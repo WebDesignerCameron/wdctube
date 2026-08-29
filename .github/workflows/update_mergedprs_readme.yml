@@ -1,0 +1,52 @@
+name: Update Merged PR Count
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install jq
+        run: |
+          sudo apt-get update && sudo apt-get install -y jq
+
+      - name: Calculate Total Merged PRs
+        id: count_merged_prs
+        run: |
+          REPO_FULL="$GITHUB_REPOSITORY"
+          OWNER="${REPO_FULL%%/*}"
+          REPO="${REPO_FULL##*/}"
+
+          QUERY='query { repository(owner: "'"$OWNER"'", name: "'"$REPO"'") { pullRequests(states: MERGED) { totalCount } } }'
+
+          COUNT=$(curl -s -H "Authorization: bearer $GITHUB_TOKEN" -X POST -d "{\"query\":\"$QUERY\"}" https://api.github.com/graphql | jq -r '.data.repository.pullRequests.totalCount')
+
+          echo "Total merged PRs: $COUNT"
+          echo "count=$COUNT" >> $GITHUB_OUTPUT
+
+      - name: Update README.md
+        run: |
+          COUNT=${{ steps.count_merged_prs.outputs.count }}
+          sed -i "s/<!-- PR_MERGED_COUNT_START -->.*<!-- PR_MERGED_COUNT_END -->/<!-- PR_MERGED_COUNT_START --> Total PRs merged: $COUNT <!-- PR_MERGED_COUNT_END -->/g" README.md
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          # Only commit if something actually changed to avoid loops
+          git diff --quiet && git diff --staged --quiet || (git commit -m "docs: update total merged PRs to ${{ steps.count_merged_prs.outputs.count }} [skip ci]" && git push)
