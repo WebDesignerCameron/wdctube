@@ -27,7 +27,7 @@ Current status: WDCTube is not created yet.
 <br>
 <!-- PR_CLOSED_COUNT_START -->0<!-- PR_CLOSED_COUNT_END -->
 <br>
-<!-- PR_MERGED_COUNT_START -->0<!-- PR_MERGED_COUNT_END -->
+<!-- PR_MERGED_COUNT_START --> Total PRs merged: null <!-- PR_MERGED_COUNT_END -->
 <br>
 <!-- PR_CREATED_COUNT_START --> Total PRs created: null <!-- PR_CREATED_COUNT_END -->
 <section id="contribute" style="text-align:center; box-shadow: 2px 2px 8px grey;">
