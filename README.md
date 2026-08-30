@@ -25,7 +25,7 @@ Current status: WDCTube is not created yet.
 <h2>GitHub Stats(updated daily by GitHub Actions, may not be fully accurate)</h2>
 <!-- COMMIT_COUNT_START --> Total Commits: 95 <!-- COMMIT_COUNT_END -->
 <br>
-<!-- PR_CLOSED_COUNT_START -->0<!-- PR_CLOSED_COUNT_END -->
+<!-- PR_CLOSED_COUNT_START --> Total PRs closed (not merged): null <!-- PR_CLOSED_COUNT_END -->
 <br>
 <!-- PR_MERGED_COUNT_START --> Total PRs merged: null <!-- PR_MERGED_COUNT_END -->
 <br>
